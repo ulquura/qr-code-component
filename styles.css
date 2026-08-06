@@ -1,45 +1,84 @@
-body {
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    font-size: 15px;
-    font-family: outfit, sans-serif;
-    font-weight: 400;
-    background-color: hsl(212, 45%, 89%);
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* TODO: Make my design mobile first. rewrite 
+the CSS completely following the best
+practices and responsiveness rules.
 
+Reference link https://share.google/aimode/Rsf4uSH9hAjBIeIoS */
+* {
+  padding: 0;
+  margin: 0;
+  border: border-box;
+}
+body {
+  min-height: 100vh;
+  /* width: 100% */
+  max-width: 1440px;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: outfit, sans-serif;
+  font-weight: 400;
+  background-color: hsl(212, 45%, 89%);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.container{
-    background-color: hsl(0, 0%, 100%);
-    height: 60vh;
-    width: 17vw;
-    border-radius: 15px;
-    padding: 10px 0;
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center;     */
+.container {
+  background-color: hsl(0, 0%, 100%);
+  height: 60vh;
+  min-width: min(17vw, 375px);
+  border-radius: 15px;
+  /* padding: 10px 0; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center;     */
 }
 
 img {
-    height: 50%;
-    /* width: 50%; */
-    border-radius: 9px;
+  height: 50%;
+  max-width: 90%;
+  margin: 2vh;
+  /* padding-bottom: 3vh; */
+  border-radius: 9px;
 }
 .theQrcodeDescription {
-    text-align: center;
-    padding-bottom: 5vh;
-    font-size: 15px;
-    color: rgb(169, 168, 168);
+  text-align: center;
+  padding-bottom: 3vh;
+  font-size: 15px;
+  color: rgb(169, 168, 168);
 }
 
 .theQrcodeDescription > h1 {
-    font-size: 2.5vh;
-    color: black;
+  font-size: 2.5vh;
+  padding-bottom: 2vh;
+  color: black;
 }
-.attribution { font-size: 0.6875rem; text-align: center; color: rgb(169, 168, 168);}
 
-.attribution a { color: hsl(228, 45%, 44%); }
+.theQrcodeDescription > p {
+  font-size: 14px;
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+  color: rgb(169, 168, 168);
+}
+
+.attribution a {
+  text-decoration: none;
+  color: hsla(228, 45%, 44%, 0.558);
+}
+
+@media(width <= 375px){
+
+  .theQrcodeDescription {
+    padding: 3vw;
+  }
+  .theQrcodeDescription > h1 {
+    font-size: 17px;
+  }
+  .theQrcodeDescription > p {
+    font-size: 12px;
+  }
+}
