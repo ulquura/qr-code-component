@@ -26,7 +26,7 @@ This is a QR code component card Challenge.
 
 - Repository : https://github.com/ulquura/qr-code-component
 
-- Frontend Mentor challenge : https://www.frontendmentor.io?ref=challenge
+- Frontend Mentor challenge : https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H
 
 ### Built with
 
@@ -58,7 +58,19 @@ Need to do more complicated semantic html coding and box model css styling.
 Have to do more responsive design. Don't understand why the smaller or equal sign don't make the breakpoint include the precise size given.
 
 ```````````````````````````````````````````````````````
-@media(width <= 375px){
+@media (max-width: 375px){
+
+  .container {
+    background-color: hsl(0, 0%, 100%);
+    height: 60vh;
+    max-width: min(65vw, 375px);
+    border-radius: 15px;
+  }
+
+  img {
+    height: 50%;
+    max-width: 90%;
+  }
 
   .theQrcodeDescription {
     padding: 3vw;

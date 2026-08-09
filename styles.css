@@ -21,7 +21,7 @@ body {
 
 .container {
   background-color: hsl(0, 0%, 100%);
-  height: 55vh;
+  height: 80%;
   max-width: min(17vw, 375px);
   border-radius: 15px;
   /* padding: 10px 0; */
@@ -31,8 +31,8 @@ body {
 }
 
 img {
-  height: 50%;
-  max-width: 95%;
+  height: 70%;
+  max-width: 85%;
   margin: 2vh;
   /* padding-bottom: 3vh; */
   border-radius: 9px;
