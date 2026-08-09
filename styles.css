@@ -1,12 +1,7 @@
-/* TODO: Make my design mobile first. rewrite 
-the CSS completely following the best
-practices and responsiveness rules.
-
-Reference link https://share.google/aimode/Rsf4uSH9hAjBIeIoS */
 * {
   padding: 0;
   margin: 0;
-  border: border-box;
+  box-sizing: border-box;
 }
 body {
   min-height: 100vh;
@@ -26,8 +21,8 @@ body {
 
 .container {
   background-color: hsl(0, 0%, 100%);
-  height: 60vh;
-  min-width: min(17vw, 375px);
+  height: 55vh;
+  max-width: min(17vw, 375px);
   border-radius: 15px;
   /* padding: 10px 0; */
   /* display: flex; */
@@ -37,7 +32,7 @@ body {
 
 img {
   height: 50%;
-  max-width: 90%;
+  max-width: 95%;
   margin: 2vh;
   /* padding-bottom: 3vh; */
   border-radius: 9px;
@@ -70,7 +65,20 @@ img {
   color: hsla(228, 45%, 44%, 0.558);
 }
 
-@media(width <= 375px){
+
+@media (max-width: 375px){
+
+  .container {
+    background-color: hsl(0, 0%, 100%);
+    height: 60vh;
+    max-width: min(65vw, 375px);
+    border-radius: 15px;
+  }
+
+  img {
+    height: 50%;
+    max-width: 90%;
+  }
 
   .theQrcodeDescription {
     padding: 3vw;

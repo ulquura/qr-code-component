@@ -26,6 +26,8 @@ This is a QR code component card Challenge.
 
 - Repository : https://github.com/ulquura/qr-code-component
 
+- Frontend Mentor challenge : https://www.frontendmentor.io?ref=challenge
+
 ### Built with
 
 - Semantic HTML5 markup
@@ -36,10 +38,40 @@ This is a QR code component card Challenge.
 ### What I learned
 
 I have better understanding of responsive design and media queries as well as flexbox and layout balance.
+specifically i learn how to center a container
+
+`````````````````````````````````````````````````````
+CSS
+body {  
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+`````````````````````````````````````````````````````
+Also learned how important the main tag is for accessibility.
 
 ### Continued development
 
-Need to do more complicated semantic html coding and box model css styling
+Need to do more complicated semantic html coding and box model css styling.
+
+Have to do more responsive design. Don't understand why the smaller or equal sign don't make the breakpoint include the precise size given.
+
+```````````````````````````````````````````````````````
+@media(width <= 375px){
+
+  .theQrcodeDescription {
+    padding: 3vw;
+  }
+  .theQrcodeDescription > h1 {
+    font-size: 17px;
+  }
+  .theQrcodeDescription > p {
+    font-size: 12px;
+  }
+}
+
+``````````````````````````````````````````````````````
 
 
 ### AI Collaboration
